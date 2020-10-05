@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     public bool Airborne => _airborne;
 
     //private Vector2 targetVelocity;
-    private float currentHorizontalSpeed = 0, previousHorizontalSpeed = 0;
+    //private float currentHorizontalSpeed = 0, previousHorizontalSpeed = 0;
     
     
     private void Awake() {
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
         bool jump = Input.GetButtonDown("Jump");
 
-        currentHorizontalSpeed = Mathf.Lerp(velocity.x, input.x * speed, _airborne ? airborneAcceleration : acceleration);
+        float currentHorizontalSpeed = Mathf.Lerp(velocity.x, input.x * speed, _airborne ? airborneAcceleration : acceleration);
 
         Vector2 targetVelocity = new Vector2(currentHorizontalSpeed,  velocity.y);
         

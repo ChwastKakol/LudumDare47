@@ -9,20 +9,6 @@ public class GravityObject2 : MonoBehaviour {
 
     public Vector2 boundingBoxPosition, boundingBoxSize;
     
-    void Start()
-    {
-               
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void FixedUpdate() {
-        
-    }
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.green;
