@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/poziom2.unity
+    guid: 4f747f18cd22266498305d8a3d6bf37f
+  - enabled: 1
+    path: Assets/Scenes/scena koniec.unity
+    guid: 3d2cdf9267e3b2242a19c69a5544a824
   m_configObjects: {}

@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour {
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
     }
 
     public void LoadNextLevel() {
-        if (levelCounter > SceneManager.sceneCount) {
-            // Do game finish
+        if (levelCounter >= SceneManager.sceneCountInBuildSettings) {
+            // Do game fini    sh
             Debug.Log("Game Finished");
         }
         else {
